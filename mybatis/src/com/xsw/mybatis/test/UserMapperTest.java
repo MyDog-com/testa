@@ -15,6 +15,7 @@ public class UserMapperTest {
 
 	@Test
 	public void testInsert() {
+		system.out.println("我是真的帅啊!");
 		SqlSession session = MyBatisUtil.openSession();
 		UserMapper userMapper = session.getMapper(UserMapper.class);
 		User user = new User("向思文","1234",18);
